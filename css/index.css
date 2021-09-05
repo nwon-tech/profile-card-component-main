@@ -1,24 +1,44 @@
 body {
-    background-color: hsl(185, 75%, 39%);
+  background-color: hsl(185, 75%, 39%);
 }
 
-h1{
-    font-family: 'Kumbh Sans', sans-serif;
-    font-weight: 700;
+h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
 }
 
-p{
-    font-family: 'Kumbh Sans', sans-serif;
-    font-weight: 400;
+p {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
 }
 
-.stats{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 25px;
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
 }
 
-.stats > div{
-    margin: auto;
-    
+.card {
+  border-style: dotted;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 25px;
+  border-style: solid;
+}
+
+.stats > div {
+  margin: auto;
+  border-style: double;
 }
